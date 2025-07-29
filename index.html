@@ -35,7 +35,8 @@
             font-family: 'Inter', sans-serif;
         }
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('https://images.unsplash.com/photo-1587613864429-3a1c4b8c9a7a?q=80&w=2070&auto=format&fit=crop');
+            /* Imagen de fondo actualizada a un camión de carga en carretera */
+            background-image: linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('https://images.unsplash.com/photo-1622630998477-2096240b0a7c?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
@@ -126,7 +127,8 @@
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1974&auto=format&fit=crop" alt="Camión de FloppyCarga" class="rounded-lg shadow-xl">
+                        <!-- Imagen actualizada a un camión de carga en un almacén -->
+                        <img src="https://images.unsplash.com/photo-1613255347128-2676a77d175c?q=80&w=1974&auto=format&fit=crop" alt="Camión de carga de FloppyCarga" class="rounded-lg shadow-xl">
                     </div>
                     <div class="md:w-1/2">
                         <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Nosotros</h2>
@@ -286,7 +288,6 @@
             openModal();
 
             // --- Llamada a la API de Gemini ---
-            // FIX: Removed invalid backslash character `\` before template literal backticks ``.
             const prompt = `Eres un asistente experto en logística para una empresa de mudanzas llamada Floppy Carga. Un cliente ha descrito su necesidad: "${userDescription}". Basado en esto, crea un checklist detallado y útil en formato HTML. Organiza las tareas por categorías (Ej: "4 Semanas Antes", "1 Semana Antes", "Día de la Mudanza", "Para la Carga"). Usa títulos (<h3>) para las categorías y listas (<ul> y <li>) para las tareas. Sé muy práctico y da consejos útiles.`;
             
             const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
