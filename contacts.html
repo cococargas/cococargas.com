@@ -35,10 +35,8 @@
             font-family: 'Inter', sans-serif;
         }
         .hero-bg {
-            /* Imagen de fondo actualizada a un camión de carga rojo en carretera */
-            background-image: linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
+            /* Se elimina la imagen de fondo y se reemplaza por un gradiente de color */
+            background: linear-gradient(to right, #001529, #002346);
         }
         .cta-button {
             transition: all 0.3s ease;
@@ -64,8 +62,8 @@
     <!-- Header / Navbar -->
     <header class="bg-white shadow-md text-center py-4">
         <a href="#">
-            <!-- RUTA DEL LOGO CORREGIDA -->
-            <img src="/images/logo.png" alt="Floppy Carga y Transporte" style="max-height: 100px; display: inline-block;">
+            <!-- RUTA DEL LOGO ACTUALIZADA A LA RUTA DE GITHUB -->
+            <img src="https://raw.githubusercontent.com/cococargas/cococargas.com/gh-pages/assets/img/images.png" alt="Floppy Carga y Transporte" style="max-height: 100px; display: inline-block;">
         </a>
     </header>
 
@@ -111,18 +109,13 @@
         <!-- Sección Sobre Nosotros -->
         <section id="nosotros" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/2">
-                        <!-- Imagen actualizada a un camión siendo cargado -->
-                        <img src="https://images.unsplash.com/photo-1605719258420-505179769104?q=80&w=2070&auto=format&fit=crop" alt="Camión de carga de FloppyCarga" class="rounded-lg shadow-xl">
-                    </div>
-                    <div class="md:w-1/2">
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Nosotros</h2>
-                        <p class="text-gray-600 mb-4"><strong>Floppy Carga</strong>, con más de una década de experiencia, es un referente en transporte de carga y logística. Ya sea que te estés mudando de casa o necesites transportar mercancía valiosa, manejamos cada servicio con el máximo profesionalismo.</p>
-                        <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
-                            <h4 class="font-bold text-lg text-gray-800">Nuestra Misión</h4>
-                            <p class="text-gray-700 mt-2">Brindar soluciones logísticas confiables para empresas y particulares, con enfoque en calidad y eficiencia para garantizar un servicio impecable.</p>
-                        </div>
+                 <!-- Se elimina la imagen y el texto ocupa todo el ancho -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Nosotros</h2>
+                    <p class="text-gray-600 mb-4 max-w-4xl mx-auto"><strong>Floppy Carga</strong>, con más de una década de experiencia, es un referente en transporte de carga y logística. Ya sea que te estés mudando de casa o necesites transportar mercancía valiosa, manejamos cada servicio con el máximo profesionalismo.</p>
+                    <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg max-w-4xl mx-auto">
+                        <h4 class="font-bold text-lg text-gray-800">Nuestra Misión</h4>
+                        <p class="text-gray-700 mt-2">Brindar soluciones logísticas confiables para empresas y particulares, con enfoque en calidad y eficiencia para garantizar un servicio impecable.</p>
                     </div>
                 </div>
             </div>
